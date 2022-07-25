@@ -146,36 +146,64 @@ text-shadow: 2px 2px 5px gray;
     background-image: url(./imagenes/principal\ \(1\).jpeg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+
 }
-.contactanos{
-    font-size: 40px;
-    font-family: fantasy;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 5px gray;
-    padding: 20px;
-    text-align: center;
+
+.left{
+    width: 50%;
     color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+    padding: 40px;
+    text-align: center;
+}
+
+.right{
+    width: 50%;
+}
+
+.contactanos{
+    color: yellow;
+    font-size: 35px;
+    font-family: fantasy;
+    padding: 20px;
+}
+
+.left p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .form-control{
-    width: 80%;
+    width: 90%;
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
 }
 
-.form-group{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 5px 5px 5px gray;
-    color: yellowgreen;
-    text-align: center;
-} 
-.form-group{
-    padding: 10px;
-}
 .btn{
     margin: 20px;
 }
 
+.btn-primary{
+    color: black;
+    background-color: yellow;
+    border-color: white;
+    font-family: fantasy;
+    transition: all 0.7s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-20px);
+    transition: all 0.7s;
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+
+    
 footer {
     background-color: black;
     width: 100%;
@@ -186,17 +214,31 @@ footer {
 }
 
 .horarios p {
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
 }
 
-.redes {
+.redes i{
     font-size: 40px;
     letter-spacing: 20px;
+    transition: all 0.5s;
+    
 }
 
+.redes i:hover{
+    color: yellow;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: all 0.5s;
+}
+
+::selection{
+    background-color: yellow;
+    color: black;
+}
 @media only screen and (min-width: 320px) and (max-width:600px) {
    
     .home {
@@ -265,12 +307,31 @@ footer {
         padding-top: 10px;
     }
 
-    .horarios p {
+    .contactos{
+        display: block;
+    }
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .contactanos{
+        font-size: 30px;
+    }
+    .left p{
         font-size: 15px;
+
+    }
+
+    .horarios p {
+        font-size: 12px;
         padding: 10px;
     }
 
-    .redes {
+    .redes i{
         font-size: 25px;
     }
 

@@ -47,26 +47,26 @@
     </header>
 
     <main class="contactos">
-        <h2 class="contactanos">Contactanos</h2>
+        <section class="left"> 
+        <h2 class="contactanos">Contactenos</h2>
+        <p>Envianos tus consultas, sugerencias y/o reclamos</p>
+    </section>
+    <section class="rigth">   
         <form action="/action_page.php">
             <div class="form-group">
-              <input type="name" class="form-control" placeholder="Coloque su nombre" id="name" required>
+              <input type="text" class="form-control" placeholder="Nombre y apellido" id="name" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Coloque su correo electronico" id="email" required>
+              <input type="email" class="form-control" placeholder="Correo electronico" id="email" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Coloque su numero de telefono" id="email" required>
+                <input type="text" class="form-control" placeholder="Telefono de contacto" id="number" required>
               </div>
-            <textarea name="Comentarios" id="" class="form-control" cols="50" rows="10" placeholder="Deje su comentario"></textarea>
-            <div class="form-group form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> acepto los terminos y condiciones
-              </label>
-            </div>
-            <button type="button" value=enviar class="btn btn-primary">Enviar</button>
+            <textarea name="Comentarios" id="" class="form-control" cols="50" rows="10" placeholder="Comentarios"></textarea>
+            <button type="button" value= "enviar" class="btn btn-primary">Enviar</button>
             <button type="reset" value="restablecer" class="btn btn-primary">Borrar</button>
           </form>
+        </section>
     </main>
 
 
