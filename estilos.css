@@ -142,6 +142,40 @@ text-shadow: 2px 2px 5px gray;
     border-radius: 10px;
 }
 
+.contactos{
+    background-image: url(./imagenes/principal\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.contactanos{
+    font-size: 40px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px gray;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.form-control{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form-group{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 5px gray;
+    color: yellowgreen;
+    text-align: center;
+} 
+.form-group{
+    padding: 10px;
+}
+.btn{
+    margin: 20px;
+}
+
 footer {
     background-color: black;
     width: 100%;
