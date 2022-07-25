@@ -8,46 +8,28 @@ body {
     background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
 }
 
-header {
+.navbar {
     height: 80px;
     width: 100%;
     background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    text-shadow: 3px 3px 5px gray;
-    text-transform: capitalize;
 }
 
-.logo {
+.navbar-brand {
     font-size: 25px;
-    color: black;
     font-family: fantasy;
-    padding: 25px;
+    text-shadow: 2px 2px 5px gray;
 }
 
-.listas ul {
-    padding: 30px;
-    list-style: none;
-    position: relative;
-}
+.navbar-dark .navbar-nav .nav-link{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+text-shadow: 2px 2px 5px gray;
+ }
 
-.listas ul li {
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: yellow;
 
-.listas a {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
 }
-
-.listas li a:hover {
-    color: black;
-}
-
 
 
 .home {
@@ -101,12 +83,12 @@ header {
 }
 
 
-
 .presentacion {
     width: 100%;
     min-height: 500px;
-    background-image: linear-gradient(to bottom, rgb(206, 206, 3), rgb(146, 99, 11));
+    background-color: rgba(0, 0, 0, 0.945);
     display: flex;
+    color: white;
 }
 
 .presentacion1 {
@@ -115,7 +97,7 @@ header {
     background-size: cover;
     min-height: 500px;
     width: 50%;
-
+    border-radius: 10px;
 }
 
 .presentacion2 {
@@ -128,8 +110,9 @@ header {
     font-size: 40px;
     font-family: fantasy;
     text-transform: uppercase;
-    text-shadow: 5px 5px 5px gray;
+    text-shadow: 2px 2px 5px gray;
     padding: 70px 30px;
+    text-align: center;
 
 }
 
@@ -137,11 +120,10 @@ header {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 10px;
-    text-shadow: 5px 5px 5px gray;
+    text-shadow: 2px 2px 5px gray;
 }
 
 .titulo2 {
-    background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
     height: auto;
     width: 100%;
 }
@@ -156,65 +138,9 @@ header {
     padding-top: 45px;
 }
 
-.galeria {
-    background-image: linear-gradient(to bottom, rgb(206, 206, 3), rgb(146, 99, 11));
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-areas: "item1 item2 item3"
-        "item4 item5 item6";
+.w-100 {
+    border-radius: 10px;
 }
-
-.item {
-    height: 200px;
-    border: 2px solid black;
-    margin: 20px;
-    box-shadow: 3px 3px 5px black;
-}
-
-.item:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
-}
-
-.item1 {
-    background-image: url(img/../imagenes/foto2.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item2 {
-    background-image: url(img/../imagenes/foto4.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item3 {
-    background-image: url(img/../imagenes/foto\ 1.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item4 {
-    background-image: url(img/../imagenes/foto\ 7.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item5 {
-    background-image: url(img/../imagenes/foto\ 8.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.item6 {
-    background-image: url(img/../imagenes/foto5.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-
 
 footer {
     background-color: black;
@@ -233,31 +159,12 @@ footer {
 }
 
 .redes {
-    font-size: 30px;
-    padding-top: 20px;
+    font-size: 40px;
     letter-spacing: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width:600px) {
-    header {
-        display: grid;
-        grid-template-columns: 200px 100px;
-    }
-
-    .logo {
-        font-size: 15px;
-        padding: 30px;
-    }
-
-    .listas ul {
-        padding: 10px;
-    }
-
-    .listas ul li {
-        font-size: 10px;
-        display: block;
-    }
-
+   
     .home {
         display: grid;
         grid-template-columns: 1fr;
@@ -320,6 +227,7 @@ footer {
     }
 
     .titulo2 h2 {
+        font-size: 15px;
         padding-top: 10px;
     }
 
@@ -332,31 +240,10 @@ footer {
         font-size: 25px;
     }
 
-    .galeria {
-        display: block;
-    }
  }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-    header {
-        display: grid;
-        grid-template-columns: 200px 400px;
-    }
-
-    .logo {
-        font-size: 20px;
-        padding: 25px;
-    }
-
-    .listas ul {
-        padding: 30px;
-    }
-
-    .listas ul li {
-        font-size: 10px;
-        display: inline-block;
-    }
-
+    
     .home {
         display: grid;
         grid-template-columns: 1fr;
@@ -418,15 +305,7 @@ footer {
         text-align: justify;
     }
 
-    .galeria {
-        display: grid;
-        grid-template-areas:"item1 item2"
-                            "item3 item4"
-                            "item5 item6";
-    }
-
 }
-
 
 @media screen and (min-width:1001px) {
     .home {
@@ -457,3 +336,4 @@ footer {
     }
 
 }
+
