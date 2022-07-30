@@ -1,0 +1,430 @@
+$colorfondo: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
+$color1: yellow;
+$color2: white;
+$color3: gray;
+$color4: rgba(255, 255, 0, 0.699);
+$color5: rgba(0, 0, 0, 0.507);
+$color6: black;
+$color7: rgba(0, 0, 0, 0.945);
+$font1: fantasy;
+$font2: Verdana, Geneva, Tahoma, sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: $colorfondo;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-image: $colorfondo;
+
+    &-brand {
+        font-size: 25px;
+        font-family: $font1;
+        text-shadow: 2px 2px 5px $color3;
+    }
+
+    .navbar-nav .nav-link{
+        font-family: $font2;
+        color: $color2;
+        text-shadow: 2px 2px 5px $color3;
+    }
+
+    .navbar-nav .nav-link:hover{ 
+        color: $color1;
+    }
+}
+
+.home {
+    background-image: url(img/../imagenes/foto6.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    .subtitulo {
+        color: $color4;
+        min-width: 50%;
+        height: 200px;
+        font-family: $font1;
+        background-color: $color5;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 2px solid $color4;
+        text-shadow: 5px 5px 5px $color6;
+    
+        h2 {
+            font-size: 80px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            padding-left: 70px;
+            animation-duration: 2s;
+            animation-name: bienvenidos;
+            animation-delay: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+    
+        @keyframes bienvenidos {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    
+        p {
+            font-size: 20px;
+            padding-left: 120px;
+        }
+    }
+}
+
+.presentacion {
+    width: 100%;
+    min-height: 500px;
+    background-color: $color7;
+    display: flex;
+    color: $color2;
+    
+    .presentacion1 {
+        background-image: url(img/../imagenes/principal\ \(1\).jpeg);
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        width: 50%;
+        border-radius: 10px;
+    }
+    
+    .presentacion2 {
+        min-height: 500px;
+        width: 50%;
+        padding: 30px;
+    
+        h2 {
+            font-size: 40px;
+            font-family: $font1;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px $color3;
+            padding: 70px 30px;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 20px;
+            font-family: $font2;
+            padding-top: 10px;
+            text-shadow: 2px 2px 5px $color3;
+        }
+    }
+}
+
+
+
+.titulo2 {
+    height: auto;
+    width: 100%;
+    
+    h2 {
+        color: $color6;
+        text-align: center;
+        font-size: 40px;
+        font-family: $font1;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 5px $color3;
+        padding-top: 45px;
+    }
+}
+
+.contactos{
+    background-image: url(./imagenes/principal\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .left{
+        width: 50%;
+        color: $color2;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px $color6;
+        padding: 40px;
+        text-align: center;
+
+        .contactanos{
+            color: $color1;
+            font-size: 35px;
+            font-family: $font1;
+            padding: 20px;
+        }
+        
+        p{
+            font-size: 20px;
+            font-family: $font2;
+        
+        }
+    }
+
+    .right{
+        width: 50%;
+    }
+    .form-control{
+        width: 90%;
+        padding: 10px;
+        margin: 15px;
+    }
+        
+    .btn{
+        margin: 20px;
+    }
+        
+    .btn-primary{
+        color: $color6;
+        background-color: $color1;
+        border-color: $color2;
+        font-family: $font1;
+        transition: all 0.7s;
+    }
+
+    .btn-primary:hover{
+        transform: translateY(-20px);
+        transition: all 0.7s;
+        background-color: $color1;
+        border-color: $color1;
+        color: $color6;
+    }
+    
+}
+
+
+footer {
+    background-color: $color6;
+    width: 100%;
+    min-height: 50%;
+    color: $color2;
+    text-align: center;
+    padding: 20px;
+
+    .horarios p{  
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-family: $font2;
+        text-transform: uppercase;
+    }
+
+    .redes i{
+        font-size: 40px;
+        letter-spacing: 20px;
+        transition: all 0.5s;
+    }
+
+    .redes i:hover{
+        color: $color1;
+        cursor: pointer;
+        transform: translateY(-20px);
+        transition: all 0.5s;
+    }
+
+    ::selection{
+        background-color: $color1;
+        color: $color6;
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width:600px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url(img/../imagenes/foto\ 12.png);
+
+        .subtitulo {
+            width: 200px;
+            height: 150px;
+            margin-top: 80px;
+            margin-left: 130px;
+            margin-right: 120px;
+        
+            h2{
+                font-size: 30px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 15px;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .presentacion {
+        display: grid;
+        grid-column: 1fr;
+
+        .presentacion1 {
+            width: 100%;
+            min-height: 200px;
+        }
+
+        .presentacion2 {
+            width: 100%;
+            min-height: 100px;
+
+            h2 {
+                font-size: 20px;
+                padding-top: 10px;
+                padding-left: 40px;
+                padding-right: 30px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 15px;
+                padding-top: 10px;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-bottom: 15px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .titulo2 h2 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .contactos{
+        display: block;
+
+        .left{
+            width: 100%;
+
+            .contactanos{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .right{
+            width: 100%;
+        }
+    }
+
+    footer{ 
+        .horarios p {
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .redes i{
+            font-size: 25px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .subtitulo {
+            width: 300px;
+            height: 200px;
+            margin-top: 80px;
+            margin-left: 220px;
+            margin-right: 200px;
+        
+            h2 {
+                font-size: 50px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .presentacion {
+        display: flex;
+        justify-content: space-between;
+
+        .presentacion1 {
+            width: 50%;
+            min-height: 500px;
+        }
+
+        .presentacion2 {
+            width: 50%;
+            min-height: 500px;
+        
+            h2 {
+                font-size: 25px;
+                padding-top: 80px;
+                padding-left: 40px;
+                padding-right: 30px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            p {       
+                font-size: 15px;
+                padding-top: 30px;
+                padding-right: 10px;
+                padding-left: 5px;
+                padding-bottom: 15px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1001px) { 
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        .subtitulo {
+            width: 500px;
+            height: 250px;
+            margin-top: 80px;
+            margin-left: 300px;
+            margin-right: 300px;
+
+            h2 {
+                font-size: 80px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

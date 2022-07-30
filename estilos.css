@@ -1,435 +1,373 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
+  background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
 }
 
 .navbar {
-    height: 80px;
-    width: 100%;
-    background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
+  height: 80px;
+  width: 100%;
+  background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
 }
-
 .navbar-brand {
-    font-size: 25px;
-    font-family: fantasy;
-    text-shadow: 2px 2px 5px gray;
+  font-size: 25px;
+  font-family: fantasy;
+  text-shadow: 2px 2px 5px gray;
 }
-
-.navbar-dark .navbar-nav .nav-link{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: white;
-text-shadow: 2px 2px 5px gray;
- }
-
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: yellow;
-
+.navbar .navbar-nav .nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
 }
-
+.navbar .navbar-nav .nav-link:hover {
+  color: yellow;
+}
 
 .home {
-    background-image: url(img/../imagenes/foto6.jpeg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+  background-image: url(img/../imagenes/foto6.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-
-.subtitulo {
-    color: rgba(255, 255, 0, 0.699);
-    width: 30%;
-    height: 250px;
-    font-family: fantasy;
-    background-color: rgba(0, 0, 0, 0.507);
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 2px solid rgba(255, 255, 0, 0.548);
-    text-shadow: 5px 5px 5px black;
+.home .subtitulo {
+  color: rgba(255, 255, 0, 0.699);
+  min-width: 50%;
+  height: 200px;
+  font-family: fantasy;
+  background-color: rgba(0, 0, 0, 0.507);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 0, 0.699);
+  text-shadow: 5px 5px 5px black;
 }
-
-.subtitulo h2 {
-    font-size: 80px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 70px;
-    animation-duration: 2s;
-    animation-name: bienvenidos;
-    animation-delay: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.home .subtitulo h2 {
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: bienvenidos;
+          animation-name: bienvenidos;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
-
+@-webkit-keyframes bienvenidos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes bienvenidos {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.subtitulo p {
-    font-size: 20px;
-    padding-left: 120px;
+.home .subtitulo p {
+  font-size: 20px;
+  padding-left: 120px;
 }
-
 
 .presentacion {
-    width: 100%;
-    min-height: 500px;
-    background-color: rgba(0, 0, 0, 0.945);
-    display: flex;
-    color: white;
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.945);
+  display: flex;
+  color: white;
 }
-
-.presentacion1 {
-    background-image: url(img/../imagenes/principal\ \(1\).jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-    width: 50%;
-    border-radius: 10px;
+.presentacion .presentacion1 {
+  background-image: url(img/../imagenes/principal\ \(1\).jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  width: 50%;
+  border-radius: 10px;
 }
-
-.presentacion2 {
-    min-height: 500px;
-    width: 50%;
-    padding: 30px;
+.presentacion .presentacion2 {
+  min-height: 500px;
+  width: 50%;
+  padding: 30px;
 }
-
-.presentacion2 h2 {
-    font-size: 40px;
-    font-family: fantasy;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px gray;
-    padding: 70px 30px;
-    text-align: center;
-
+.presentacion .presentacion2 h2 {
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px gray;
+  padding: 70px 30px;
+  text-align: center;
 }
-
-.presentacion2 p {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 10px;
-    text-shadow: 2px 2px 5px gray;
+.presentacion .presentacion2 p {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+  text-shadow: 2px 2px 5px gray;
 }
 
 .titulo2 {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
-
 .titulo2 h2 {
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    font-family: fantasy;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 5px gray;
-    padding-top: 45px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px gray;
+  padding-top: 45px;
 }
 
-.w-100 {
-    border-radius: 10px;
+.contactos {
+  background-image: url(./imagenes/principal\ \(1\).jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.contactos .left {
+  width: 50%;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+  padding: 40px;
+  text-align: center;
+}
+.contactos .left .contactanos {
+  color: yellow;
+  font-size: 35px;
+  font-family: fantasy;
+  padding: 20px;
+}
+.contactos .left p {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactos .right {
+  width: 50%;
+}
+.contactos .form-control {
+  width: 90%;
+  padding: 10px;
+  margin: 15px;
+}
+.contactos .btn {
+  margin: 20px;
+}
+.contactos .btn-primary {
+  color: black;
+  background-color: yellow;
+  border-color: white;
+  font-family: fantasy;
+  transition: all 0.7s;
+}
+.contactos .btn-primary:hover {
+  transform: translateY(-20px);
+  transition: all 0.7s;
+  background-color: yellow;
+  border-color: yellow;
+  color: black;
 }
 
-.contactos{
-    background-image: url(./imagenes/principal\ \(1\).jpeg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-}
-
-.left{
-    width: 50%;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
-    padding: 40px;
-    text-align: center;
-}
-
-.right{
-    width: 50%;
-}
-
-.contactanos{
-    color: yellow;
-    font-size: 35px;
-    font-family: fantasy;
-    padding: 20px;
-}
-
-.left p{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.form-control{
-    width: 90%;
-    padding: 10px;
-    margin: 15px;
-}
-
-.btn{
-    margin: 20px;
-}
-
-.btn-primary{
-    color: black;
-    background-color: yellow;
-    border-color: white;
-    font-family: fantasy;
-    transition: all 0.7s;
-}
-
-.btn-primary:hover{
-    transform: translateY(-20px);
-    transition: all 0.7s;
-    background-color: yellow;
-    border-color: yellow;
-    color: black;
-}
-
-    
 footer {
-    background-color: black;
-    width: 100%;
-    min-height: 50%;
-    color: white;
-    text-align: center;
+  background-color: black;
+  width: 100%;
+  min-height: 50%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer .horarios p {
+  font-size: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+footer .redes i {
+  font-size: 40px;
+  letter-spacing: 20px;
+  transition: all 0.5s;
+}
+footer .redes i:hover {
+  color: yellow;
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: all 0.5s;
+}
+footer ::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+footer ::selection {
+  background-color: yellow;
+  color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(img/../imagenes/foto\ 12.png);
+  }
+  .home .subtitulo {
+    width: 200px;
+    height: 150px;
+    margin-top: 80px;
+    margin-left: 130px;
+    margin-right: 120px;
+  }
+  .home .subtitulo h2 {
+    font-size: 30px;
     padding: 20px;
-}
-
-.horarios p {
+    text-align: center;
+  }
+  .home .subtitulo p {
     font-size: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+  }
+  .presentacion {
+    display: grid;
+    grid-column: 1fr;
+  }
+  .presentacion .presentacion1 {
+    width: 100%;
+    min-height: 200px;
+  }
+  .presentacion .presentacion2 {
+    width: 100%;
+    min-height: 100px;
+  }
+  .presentacion .presentacion2 h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .presentacion .presentacion2 p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+  .titulo2 h2 {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .contactos {
+    display: block;
+  }
+  .contactos .left {
+    width: 100%;
+  }
+  .contactos .left .contactanos {
+    font-size: 30px;
+  }
+  .contactos .left p {
+    font-size: 15px;
+  }
+  .contactos .right {
+    width: 100%;
+  }
+  footer .horarios p {
+    font-size: 12px;
+    padding: 10px;
+  }
+  footer .redes i {
+    font-size: 25px;
+  }
 }
-
-.redes i{
-    font-size: 40px;
-    letter-spacing: 20px;
-    transition: all 0.5s;
-    
-}
-
-.redes i:hover{
-    color: yellow;
-    cursor: pointer;
-    transform: translateY(-20px);
-    transition: all 0.5s;
-}
-
-::selection{
-    background-color: yellow;
-    color: black;
-}
-@media only screen and (min-width: 320px) and (max-width:600px) {
-   
-    .home {
-        display: grid;
-        grid-template-columns: 1fr;
-        background-image: url(img/../imagenes/foto\ 12.png);
-    }
-
-    .subtitulo {
-        width: 200px;
-        height: 150px;
-        margin-top: 80px;
-        margin-left: 130px;
-        margin-right: 120px;
-
-    }
-
-    .subtitulo h2 {
-        font-size: 30px;
-        padding: 20px;
-        text-align: center;
-
-    }
-
-    .subtitulo p {
-        font-size: 15px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .presentacion {
-        display: grid;
-        grid-column: 1fr;
-    }
-
-    .presentacion1 {
-        width: 100%;
-        min-height: 200px;
-    }
-
-    .presentacion2 {
-        width: 100%;
-        min-height: 100px;
-    }
-
-    .presentacion h2 {
-        font-size: 20px;
-        padding-top: 10px;
-        padding-left: 40px;
-        padding-right: 30px;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .presentacion p {
-        font-size: 15px;
-        padding-top: 10px;
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-bottom: 15px;
-        text-align: justify;
-    }
-
-    .titulo2 h2 {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-
-    .contactos{
-        display: block;
-    }
-    .left{
-        width: 100%;
-    }
-
-    .right{
-        width: 100%;
-    }
-
-    .contactanos{
-        font-size: 30px;
-    }
-    .left p{
-        font-size: 15px;
-
-    }
-
-    .horarios p {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .redes i{
-        font-size: 25px;
-    }
-
- }
-
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-    
-    .home {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .subtitulo {
-        width: 300px;
-        height: 180px;
-        margin-top: 80px;
-        margin-left: 200px;
-        margin-right: 150px;
-
-    }
-
-    .subtitulo h2 {
-        font-size: 50px;
-        padding: 20px;
-        text-align: center;
-
-    }
-
-    .subtitulo p {
-        font-size: 15px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .presentacion {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .presentacion1 {
-        width: 50%;
-        min-height: 500px;
-    }
-
-    .presentacion2 {
-        width: 50%;
-        min-height: 500px;
-    }
-
-    .presentacion h2 {
-        font-size: 25px;
-        padding-top: 80px;
-        padding-left: 40px;
-        padding-right: 30px;
-        padding-bottom: 20px;
-        text-align: center;
-    }
-
-    .presentacion p {
-        font-size: 15px;
-        font-size: 15px;
-        padding-top: 30px;
-        padding-right: 10px;
-        padding-left: 5px;
-        padding-bottom: 15px;
-        text-align: justify;
-    }
-
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home .subtitulo {
+    width: 300px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 220px;
+    margin-right: 200px;
+  }
+  .home .subtitulo h2 {
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  .home .subtitulo p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .presentacion {
+    display: flex;
+    justify-content: space-between;
+  }
+  .presentacion .presentacion1 {
+    width: 50%;
+    min-height: 500px;
+  }
+  .presentacion .presentacion2 {
+    width: 50%;
+    min-height: 500px;
+  }
+  .presentacion .presentacion2 h2 {
+    font-size: 25px;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .presentacion .presentacion2 p {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
 }
-
-@media screen and (min-width:1001px) {
-    .home {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .subtitulo {
-        width: 500px;
-        height: 200px;
-        margin-top: 80px;
-        margin-left: 400px;
-        margin-right: 300px;
-
-    }
-
-    .subtitulo h2 {
-        font-size: 80px;
-        padding: 20px;
-        text-align: center;
-
-    }
-
-    .subtitulo p {
-        font-size: 20px;
-        padding: 10px;
-        text-align: center;
-    }
-
-}
-
-
+@media screen and (min-width: 1001px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home .subtitulo {
+    width: 500px;
+    height: 250px;
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .home .subtitulo h2 {
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+  }
+  .home .subtitulo p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */
