@@ -9,6 +9,12 @@ $color7: rgba(0, 0, 0, 0.945);
 $font1: fantasy;
 $font2: Verdana, Geneva, Tahoma, sans-serif;
 
+@mixin valores ($ancho, $alto, $imagen) {
+    width: $ancho;
+    height: $alto;
+    background-image: $imagen;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,9 +26,9 @@ body {
 }
 
 .navbar {
+    @extend body;
     height: 80px;
     width: 100%;
-    background-image: $colorfondo;
 
     &-brand {
         font-size: 25px;
@@ -30,26 +36,24 @@ body {
         text-shadow: 2px 2px 5px $color3;
     }
 
-    .navbar-nav .nav-link{
+    .navbar-nav .nav-link {
         font-family: $font2;
         color: $color2;
         text-shadow: 2px 2px 5px $color3;
     }
 
-    .navbar-nav .nav-link:hover{ 
+    .navbar-nav .nav-link:hover {
         color: $color1;
     }
 }
 
 .home {
-    background-image: url(img/../imagenes/foto6.jpeg);
+    @include valores (100%, 100vh, url(img/../imagenes/foto6.jpeg));
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    
+
     .subtitulo {
         color: $color4;
         min-width: 50%;
@@ -59,8 +63,8 @@ body {
         text-transform: uppercase;
         border-radius: 5px;
         border: 2px solid $color4;
-        text-shadow: 5px 5px 5px $color6;
-    
+        text-shadow: 2px 2px 5px $color6;
+
         h2 {
             font-size: 80px;
             padding-top: 40px;
@@ -73,17 +77,18 @@ body {
             animation-iteration-count: infinite;
         }
 
-    
+
         @keyframes bienvenidos {
             0% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 1;
             }
         }
 
-    
+
         p {
             font-size: 20px;
             padding-left: 120px;
@@ -97,7 +102,7 @@ body {
     background-color: $color7;
     display: flex;
     color: $color2;
-    
+
     .presentacion1 {
         background-image: url(img/../imagenes/principal\ \(1\).jpeg);
         background-position: center;
@@ -106,12 +111,12 @@ body {
         width: 50%;
         border-radius: 10px;
     }
-    
+
     .presentacion2 {
         min-height: 500px;
         width: 50%;
         padding: 30px;
-    
+
         h2 {
             font-size: 40px;
             font-family: $font1;
@@ -120,9 +125,9 @@ body {
             padding: 70px 30px;
             text-align: center;
         }
-    
-        p {
-            font-size: 20px;
+
+        em {
+            font-size: 25px;
             font-family: $font2;
             padding-top: 10px;
             text-shadow: 2px 2px 5px $color3;
@@ -135,7 +140,7 @@ body {
 .titulo2 {
     height: auto;
     width: 100%;
-    
+
     h2 {
         color: $color6;
         text-align: center;
@@ -145,16 +150,40 @@ body {
         text-shadow: 5px 5px 5px $color3;
         padding-top: 45px;
     }
+
+    $mapa1: (
+        21px: white,
+        20px: black,
+    );
+
+@each $sizes,
+$colores in $mapa1 {
+    .maps-#{$colores} {
+        background-color: gray;
+        height: auto;
+        width: 50%;
+        border: 3px solid $colores;
+        border-radius: 10px;
+        color: yellow;
+        font-size: $sizes;
+        text-transform: uppercase;
+        margin: 100px;
+        padding: 40px;
+        text-align: center;
+    }
+}
 }
 
-.contactos{
-    background-image: url(./imagenes/principal\ \(1\).jpeg);
+
+.contactos {
+    @include valores (100%, 100vh, url(img/../imagenes/principal\ \(1\).jpeg));
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
+    padding: 20px;
 
-    .left{
+    .left {
         width: 50%;
         color: $color2;
         text-transform: uppercase;
@@ -162,34 +191,36 @@ body {
         padding: 40px;
         text-align: center;
 
-        .contactanos{
+        .contactanos {
             color: $color1;
             font-size: 35px;
             font-family: $font1;
             padding: 20px;
         }
-        
-        p{
-            font-size: 20px;
+
+        strong {
+            font-size: 30px;
             font-family: $font2;
-        
+
         }
     }
 
-    .right{
+    .right {
         width: 50%;
+        padding: 60px;
     }
-    .form-control{
+
+    .form-control {
         width: 90%;
         padding: 10px;
         margin: 15px;
     }
-        
-    .btn{
+
+    .btn {
         margin: 20px;
     }
-        
-    .btn-primary{
+
+    .btn-primary {
         color: $color6;
         background-color: $color1;
         border-color: $color2;
@@ -197,14 +228,14 @@ body {
         transition: all 0.7s;
     }
 
-    .btn-primary:hover{
+    .btn-primary:hover {
         transform: translateY(-20px);
         transition: all 0.7s;
         background-color: $color1;
         border-color: $color1;
         color: $color6;
     }
-    
+
 }
 
 
@@ -216,7 +247,7 @@ footer {
     text-align: center;
     padding: 20px;
 
-    .horarios p{  
+    .horarios p {
         font-size: 15px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -224,20 +255,20 @@ footer {
         text-transform: uppercase;
     }
 
-    .redes i{
+    .redes i {
         font-size: 40px;
         letter-spacing: 20px;
         transition: all 0.5s;
     }
 
-    .redes i:hover{
+    .redes i:hover {
         color: $color1;
         cursor: pointer;
         transform: translateY(-20px);
         transition: all 0.5s;
     }
 
-    ::selection{
+    ::selection {
         background-color: $color1;
         color: $color6;
     }
@@ -257,8 +288,8 @@ footer {
             margin-top: 80px;
             margin-left: 130px;
             margin-right: 120px;
-        
-            h2{
+
+            h2 {
                 font-size: 30px;
                 padding: 20px;
                 text-align: center;
@@ -294,7 +325,7 @@ footer {
                 text-align: center;
             }
 
-            p {
+            em {
                 font-size: 15px;
                 padding-top: 10px;
                 padding-right: 5px;
@@ -305,40 +336,68 @@ footer {
         }
     }
 
-    .titulo2 h2 {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-
-    .contactos{
-        display: block;
-
-        .left{
-            width: 100%;
-
-            .contactanos{
-                font-size: 30px;
-            }
-            p{
-                font-size: 15px;
-            }
+    .titulo2 {
+        h2 {
+            font-size: 30px;
+            padding-top: 15px;
         }
 
-        .right{
-            width: 100%;
-        }
-    }
+        $mapa1: (
+            20px: white,
+            21px: black,
+        );
 
-    footer{ 
-        .horarios p {
-            font-size: 12px;
+    @each $sizes,
+    $colores in $mapa1 {
+        .maps-#{$colores} {
+            background-color: gray;
+            height: 200px;
+            width: 400px;
+            border: 3px solid $colores;
+            border-radius: 10px;
+            color: yellow;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 50px;
             padding: 10px;
-        }
+            text-align: center;
+            width: 50%;
+            height: auto;
 
-        .redes i{
-            font-size: 25px;
         }
     }
+}
+
+.contactos {
+    display: block;
+
+    .left {
+        width: 100%;
+
+        .contactanos {
+            font-size: 30px;
+        }
+
+        strong {
+            font-size: 15px;
+        }
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+footer {
+    .horarios p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .redes i {
+        font-size: 25px;
+    }
+}
 }
 
 
@@ -353,7 +412,7 @@ footer {
             margin-top: 80px;
             margin-left: 220px;
             margin-right: 200px;
-        
+
             h2 {
                 font-size: 50px;
                 padding: 20px;
@@ -380,7 +439,7 @@ footer {
         .presentacion2 {
             width: 50%;
             min-height: 500px;
-        
+
             h2 {
                 font-size: 25px;
                 padding-top: 80px;
@@ -390,7 +449,7 @@ footer {
                 text-align: center;
             }
 
-            p {       
+            em {
                 font-size: 15px;
                 padding-top: 30px;
                 padding-right: 10px;
@@ -402,11 +461,11 @@ footer {
     }
 }
 
-@media screen and (min-width:1001px) { 
+@media screen and (min-width:1001px) {
     .home {
         display: grid;
         grid-template-columns: 1fr;
-    
+
         .subtitulo {
             width: 500px;
             height: 250px;
