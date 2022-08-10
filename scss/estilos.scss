@@ -215,9 +215,10 @@ body {
     p {
         color: $color7;
         text-align: justify;
-        font-size: 15px;
+        font-size: 20px;
         font-family: $font2;
-        margin: 20px;
+        margin: 15px;
+        font-weight: bold;
     }
 
     .productos2 {
@@ -313,6 +314,7 @@ body {
         font-family: $font2;
         padding: 20px;
         text-transform: capitalize;
+        font-weight: bold;
     }
 }
 
@@ -330,6 +332,7 @@ footer {
         padding-top: 5px;
         font-family: $font2;
         text-transform: uppercase;
+        font-weight: bold;
     }
 
     .redes i {

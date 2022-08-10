@@ -205,9 +205,10 @@ body, .ubicacion, .productos {
 .productos p {
   color: rgba(0, 0, 0, 0.945);
   text-align: justify;
-  font-size: 15px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px;
+  margin: 15px;
+  font-weight: bold;
 }
 .productos .productos2 {
   height: auto;
@@ -283,6 +284,7 @@ body, .ubicacion, .productos {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 20px;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 footer {
@@ -299,6 +301,7 @@ footer .horarios p {
   padding-top: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
 }
 footer .redes i {
   font-size: 40px;
