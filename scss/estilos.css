@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
-body, .navbar {
-  background-image: linear-gradient(to top, rgb(206, 206, 3), rgb(146, 99, 11));
+body, .ubicacion, .productos {
+  background-image: linear-gradient(97.3deg, rgba(25, 50, 70, 0.81) 10.7%, rgba(155, 65, 25, 0.72) 39.5%, rgba(255, 192, 0, 0.81) 69.7%);
 }
 
 .navbar {
+  background-color: #161615;
+  background-image: linear-gradient(12deg, #161615 0%, #2d2d28 46%, #615d54 100%);
   height: 80px;
   width: 100%;
 }
@@ -29,7 +31,7 @@ body, .navbar {
 .home {
   width: 100%;
   height: 100vh;
-  background-image: url(img/../imagenes/foto6.jpeg);
+  background-image: url(img/../../imagenes/IMG_0385.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -43,7 +45,6 @@ body, .navbar {
   background-color: rgba(0, 0, 0, 0.507);
   text-transform: uppercase;
   border-radius: 5px;
-  border: 2px solid rgba(255, 255, 0, 0.699);
   text-shadow: 2px 2px 5px black;
 }
 .home .subtitulo h2 {
@@ -91,7 +92,7 @@ body, .navbar {
   color: white;
 }
 .presentacion .presentacion1 {
-  background-image: url(img/../imagenes/principal\ \(1\).jpeg);
+  background-image: url(img/../../imagenes/IMG_0386.jpg);
   background-position: center;
   background-size: cover;
   min-height: 500px;
@@ -111,11 +112,12 @@ body, .navbar {
   padding: 70px 30px;
   text-align: center;
 }
-.presentacion .presentacion2 em {
-  font-size: 25px;
+.presentacion .presentacion2 p {
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 10px;
   text-shadow: 2px 2px 5px gray;
+  text-align: justify;
 }
 
 .titulo2 {
@@ -129,74 +131,48 @@ body, .navbar {
   font-family: fantasy;
   text-transform: uppercase;
   text-shadow: 5px 5px 5px gray;
-  padding-top: 45px;
-}
-.titulo2 .maps-white {
-  background-color: gray;
-  height: auto;
-  width: 50%;
-  border: 3px solid white;
-  border-radius: 10px;
-  color: yellow;
-  font-size: 21px;
-  text-transform: uppercase;
-  margin: 100px;
-  padding: 40px;
-  text-align: center;
-}
-.titulo2 .maps-black {
-  background-color: gray;
-  height: auto;
-  width: 50%;
-  border: 3px solid black;
-  border-radius: 10px;
-  color: yellow;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 100px;
-  padding: 40px;
-  text-align: center;
+  padding-top: 20px;
 }
 
 .contactos {
   width: 100%;
   height: 100vh;
-  background-image: url(img/../imagenes/principal\ \(1\).jpeg);
+  background-image: url(img/../../imagenes/IMG_0385.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 .contactos .left {
   width: 50%;
   color: white;
   text-transform: uppercase;
-  text-shadow: 2px 2px 5px black;
-  padding: 40px;
+  text-shadow: 2px 2px 5px gray;
+  padding: 20px;
   text-align: center;
 }
 .contactos .left .contactanos {
   color: yellow;
   font-size: 35px;
   font-family: fantasy;
-  padding: 20px;
+  padding: 10px;
 }
 .contactos .left strong {
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .contactos .right {
   width: 50%;
-  padding: 60px;
+  padding: 20px;
 }
 .contactos .form-control {
   width: 90%;
   padding: 10px;
-  margin: 15px;
+  margin: 10px;
 }
 .contactos .btn {
-  margin: 20px;
+  margin: 10px;
 }
 .contactos .btn-primary {
   color: black;
@@ -213,6 +189,102 @@ body, .navbar {
   color: black;
 }
 
+.productos {
+  height: auto;
+  width: 100%;
+}
+.productos h2 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px gray;
+  padding-top: 45px;
+}
+.productos p {
+  color: rgba(0, 0, 0, 0.945);
+  text-align: justify;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+.productos .productos2 {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6";
+}
+.productos .item {
+  height: 200px;
+  border: 2px solid black;
+  margin: 20px;
+  box-shadow: 3px 3px 5px black;
+}
+.productos .item:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.productos .item1 {
+  background-image: url(img/../../imagenes/IMG_0395.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.productos .item2 {
+  background-image: url(img/../../imagenes/IMG_0402.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.productos .item3 {
+  background-image: url(img/../../imagenes/IMG_0439.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.productos .item4 {
+  background-image: url(img/../../imagenes/IMG_0430.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.productos .item5 {
+  background-image: url(img/../../imagenes/IMG_0431.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.productos .item6 {
+  background-image: url(img/../../imagenes/IMG_0437.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ubicacion {
+  min-height: 800px;
+  width: 100%;
+}
+.ubicacion h2 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px gray;
+  padding-top: 40px;
+}
+.ubicacion iframe {
+  width: 90%;
+  height: 500px;
+  padding: 20px;
+  margin: 50px;
+}
+.ubicacion p {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
 footer {
   background-color: black;
   width: 100%;
@@ -222,7 +294,7 @@ footer {
   padding: 20px;
 }
 footer .horarios p {
-  font-size: 15px;
+  font-size: 16px;
   padding-bottom: 5px;
   padding-top: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -252,7 +324,7 @@ footer ::selection {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(img/../imagenes/foto\ 12.png);
+    background-image: url(img/../imagenes/IMG_0385.jpg);
   }
   .home .subtitulo {
     width: 200px;
@@ -267,7 +339,7 @@ footer ::selection {
     text-align: center;
   }
   .home .subtitulo p {
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px;
     text-align: center;
   }
@@ -291,69 +363,73 @@ footer ::selection {
     padding-bottom: 10px;
     text-align: center;
   }
-  .presentacion .presentacion2 em {
-    font-size: 15px;
-    padding-top: 10px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 15px;
-    text-align: justify;
+  .presentacion .presentacion2 p {
+    font-size: 16px;
+    padding: 0%;
+    margin: 0%;
   }
   .titulo2 h2 {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 15px;
-  }
-  .titulo2 .maps-white {
-    background-color: gray;
-    height: 200px;
-    width: 400px;
-    border: 3px solid white;
-    border-radius: 10px;
-    color: yellow;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 50px;
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    height: auto;
-  }
-  .titulo2 .maps-black {
-    background-color: gray;
-    height: 200px;
-    width: 400px;
-    border: 3px solid black;
-    border-radius: 10px;
-    color: yellow;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 50px;
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    height: auto;
   }
   .contactos {
     display: block;
+    min-height: 800px;
   }
   .contactos .left {
     width: 100%;
   }
   .contactos .left .contactanos {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contactos .left strong {
-    font-size: 15px;
+    font-size: 16px;
   }
   .contactos .right {
     width: 100%;
   }
+  .productos h2 {
+    font-size: 25px;
+  }
+  .productos p {
+    font-size: 16px;
+  }
+  .productos .productos2 {
+    display: grid;
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
+  }
+  .ubicacion h2 {
+    font-size: 25px;
+  }
+  .ubicacion p {
+    font-size: 16px;
+  }
+  .ubicacion iframe {
+    width: 90%;
+    height: 500px;
+    padding: 30px;
+    margin: 0%;
+  }
   footer .horarios p {
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px;
   }
   footer .redes i {
     font-size: 25px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .productos .productos2 {
+    display: grid;
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6";
+  }
+  .ubicacion h2 {
+    font-size: 30px;
+  }
+  .ubicacion iframe {
+    width: 90%;
+    height: 500px;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
@@ -398,8 +474,8 @@ footer ::selection {
     padding-bottom: 20px;
     text-align: center;
   }
-  .presentacion .presentacion2 em {
-    font-size: 15px;
+  .presentacion .presentacion2 p {
+    font-size: 16px;
     padding-top: 30px;
     padding-right: 10px;
     padding-left: 5px;

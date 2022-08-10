@@ -1,0 +1,5 @@
+@mixin valores ($ancho, $alto, $imagen) {
+    width: $ancho;
+    height: $alto;
+    background-image: $imagen;
+}

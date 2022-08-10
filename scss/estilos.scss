@@ -1,0 +1,355 @@
+@import "./reset/reset";
+@import "./utilities/variables";
+@import "./utilities/mixin.scss";
+
+
+body {
+    background-image: $colorfondo;
+}
+
+.navbar {
+    background-color: #161615;
+    background-image: $nav;
+    height: 80px;
+    width: 100%;
+
+    &-brand {
+        font-size: 25px;
+        font-family: $font1;
+        text-shadow: 2px 2px 5px $color3;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: $font2;
+        color: $color2;
+        text-shadow: 2px 2px 5px $color3;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: $color1;
+    }
+}
+
+.home {
+    @include valores (100%, 100vh, url(img/../../imagenes/IMG_0385.jpg));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .subtitulo {
+        color: $color4;
+        min-width: 50%;
+        height: 200px;
+        font-family: $font1;
+        background-color: $color5;
+        text-transform: uppercase;
+        border-radius: 5px;
+        text-shadow: 2px 2px 5px $color6;
+
+        h2 {
+            font-size: 80px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            padding-left: 70px;
+            animation-duration: 2s;
+            animation-name: bienvenidos;
+            animation-delay: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes bienvenidos {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        p {
+            font-size: 20px;
+            padding-left: 120px;
+        }
+    }
+}
+
+.presentacion {
+    width: 100%;
+    min-height: 500px;
+    background-color: $color7;
+    display: flex;
+    color: $color2;
+
+    .presentacion1 {
+        background-image: url(img/../../imagenes/IMG_0386.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .presentacion2 {
+        min-height: 500px;
+        width: 50%;
+        padding: 30px;
+
+        h2 {
+            font-size: 40px;
+            font-family: $font1;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px $color3;
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: $font2;
+            padding-top: 10px;
+            text-shadow: 2px 2px 5px $color3;
+            text-align: justify;
+        }
+    }
+}
+
+
+
+.titulo2 {
+    height: auto;
+    width: 100%;
+
+    h2 {
+        color: $color6;
+        text-align: center;
+        font-size: 40px;
+        font-family: $font1;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 5px $color3;
+        padding-top: 20px;
+    }
+}
+
+.contactos {
+    @include valores (100%, 100vh, url(img/../../imagenes/IMG_0385.jpg));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+    .left {
+        width: 50%;
+        color: $color2;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px $color3;
+        padding: 20px;
+        text-align: center;
+
+        .contactanos {
+            color: $color1;
+            font-size: 35px;
+            font-family: $font1;
+            padding: 10px;
+        }
+
+        strong {
+            font-size: 20px;
+            font-family: $font2;
+
+        }
+    }
+
+    .right {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .form-control {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+
+    .btn-primary {
+        color: $color6;
+        background-color: $color1;
+        border-color: $color2;
+        font-family: $font1;
+        transition: all 0.7s;
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-20px);
+        transition: all 0.7s;
+        background-color: $color1;
+        border-color: $color1;
+        color: $color6;
+    }
+}
+
+.productos {
+    @extend body;
+    height: auto;
+    width: 100%;
+
+    h2 {
+        color: $color6;
+        text-align: center;
+        font-size: 40px;
+        font-family: $font1;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px $color3;
+        padding-top: 45px;
+    }
+
+    p {
+        color: $color7;
+        text-align: justify;
+        font-size: 15px;
+        font-family: $font2;
+        margin: 20px;
+    }
+
+    .productos2 {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:"item1 item2 item3"
+                            "item4 item5 item6";
+    }
+
+    .item {
+        height: 200px;
+        border: 2px solid $color6;
+        margin: 20px;
+        box-shadow: 3px 3px 5px $color6;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+        transition: all 0.5s;
+    }
+
+
+    .item1 {
+        background-image: url(img/../../imagenes/IMG_0395.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .item2 {
+        background-image: url(img/../../imagenes/IMG_0402.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .item3 {
+        background-image: url(img/../../imagenes/IMG_0439.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .item4 {
+        background-image: url(img/../../imagenes/IMG_0430.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .item5 {
+        background-image: url(img/../../imagenes/IMG_0431.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .item6 {
+        background-image: url(img/../../imagenes/IMG_0437.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.ubicacion {
+    @extend body;
+    min-height: 800px;
+    width: 100%;
+
+    h2 {
+        color: $color6;
+        text-align: center;
+        font-size: 40px;
+        font-family: $font1;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px $color3;
+        padding-top: 40px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 500px;
+        padding: 20px;
+        margin: 50px;
+    }
+
+    p {
+        color: $color6;
+        text-align: center;
+        font-size: 25px;
+        font-family: $font2;
+        padding: 20px;
+        text-transform: capitalize;
+    }
+}
+
+footer {
+    background-color: $color6;
+    width: 100%;
+    min-height: 50%;
+    color: $color2;
+    text-align: center;
+    padding: 20px;
+
+    .horarios p {
+        font-size: 16px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-family: $font2;
+        text-transform: uppercase;
+    }
+
+    .redes i {
+        font-size: 40px;
+        letter-spacing: 20px;
+        transition: all 0.5s;
+    }
+
+    .redes i:hover {
+        color: $color1;
+        cursor: pointer;
+        transform: translateY(-20px);
+        transition: all 0.5s;
+    }
+
+    ::selection {
+        background-color: $color1;
+        color: $color6;
+    }
+}
+
+@import "./views/mediaqueries.scss";
+
