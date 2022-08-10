@@ -190,7 +190,7 @@ body, .ubicacion, .productos {
 }
 
 .productos {
-  height: auto;
+  min-height: 800px;
   width: 100%;
 }
 .productos h2 {
