@@ -324,7 +324,7 @@ footer ::selection {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(img/../imagenes/IMG_0385.jpg);
+    background-image: url(img/../../../imagenes/IMG_0385.jpg);
   }
   .home .subtitulo {
     width: 200px;
