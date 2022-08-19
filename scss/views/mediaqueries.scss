@@ -1,15 +1,8 @@
 @media only screen and (min-width: 320px) and (max-width:600px) {
     .home {
-        display: grid;
-        grid-template-columns: 1fr;
-        background-image: url(img/../../../imagenes/IMG_0385.jpg);
-        
         .subtitulo {
             width: 200px;
             height: 150px;
-            margin-top: 80px;
-            margin-left: 130px;
-            margin-right: 120px;
 
             h2 {
                 font-size: 30px;
@@ -66,12 +59,14 @@
     .contactos {
         display: block;
         min-height: 800px;
+        padding: 0%;
+        margin: 0%;
 
         .left {
             width: 100%;
 
             .contactanos {
-                font-size: 20px;
+                font-size: 30px;
             }
 
             strong {
@@ -101,6 +96,8 @@
                 "item4"
                 "item5"
                 "item6";
+            grid-template-rows: 500px 500px 500px 500px 500px 500px;
+            grid-template-columns: 1fr;
         }
     }
 
@@ -111,13 +108,6 @@
 
         p {
             font-size: 16px;
-        }
-
-        iframe {
-            width: 90%;
-            height: 500px;
-            padding: 30px;
-            margin: 0%;
         }
     }
 
@@ -133,42 +123,11 @@
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
-
-    .productos {
-        .productos2 {
-            display: grid;
-            grid-template-areas:"item1 item2"
-                                "item3 item4"
-                                "item5 item6";
-        }
-    }
-
-    .ubicacion {
-        h2 {
-            font-size: 30px;
-        }
-
-        iframe {
-            width: 90%;
-            height: 500px;
-            margin: 10px;
-        }
-    }
-}
-
-
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
     .home {
-        display: grid;
-        grid-template-columns: 1fr;
-
         .subtitulo {
             width: 300px;
             height: 200px;
-            margin-top: 80px;
-            margin-left: 220px;
-            margin-right: 200px;
 
             h2 {
                 font-size: 50px;
@@ -216,19 +175,47 @@
             }
         }
     }
+
+    .productos{
+        .productos2 {
+            display: grid;
+            grid-template-areas:"item1 item2"
+                                "item3 item4" 
+                                "item5 item6";
+            grid-template-rows: 600px 600px 600px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contactos {
+        display: block;
+        min-height: 800px;
+        padding: 40px;
+
+        .left {
+            width: 100%;
+
+            .contactanos {
+                font-size: 30px;
+            }
+
+            strong {
+                font-size: 16px;
+            }
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
 }
+
 
 @media screen and (min-width:1001px) {
     .home {
-        display: grid;
-        grid-template-columns: 1fr;
-
         .subtitulo {
             width: 500px;
             height: 250px;
-            margin-top: 80px;
-            margin-left: 300px;
-            margin-right: 300px;
 
             h2 {
                 font-size: 80px;

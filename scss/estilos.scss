@@ -8,10 +8,10 @@ body {
 }
 
 .navbar {
-    background-color: #161615;
-    background-image: $nav;
+    @extend body;
     height: 80px;
     width: 100%;
+    border-bottom: 1px solid $color5;
 
     &-brand {
         font-size: 25px;
@@ -36,6 +36,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    justify-items: center;
+    padding: 40px;
 
     .subtitulo {
         color: $color4;
@@ -45,6 +47,7 @@ body {
         background-color: $color5;
         text-transform: uppercase;
         border-radius: 5px;
+        border: 1px solid $color4;
         text-shadow: 2px 2px 5px $color6;
 
         h2 {
@@ -118,6 +121,14 @@ body {
     }
 }
 
+.carousel{
+    padding: 10px;
+
+    .w-100{ 
+        border-radius: 10px ;
+        border: 1px solid $colorborder;
+    }
+}
 
 
 .titulo2 {
@@ -125,12 +136,12 @@ body {
     width: 100%;
 
     h2 {
-        color: $color6;
+        color: $color4;
         text-align: center;
         font-size: 40px;
         font-family: $font1;
         text-transform: uppercase;
-        text-shadow: 5px 5px 5px $color3;
+        text-shadow: 2px 2px 5px $color6;
         padding-top: 20px;
     }
 }
@@ -141,27 +152,26 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 80px;
 
     .left {
         width: 50%;
-        color: $color2;
+        color:$color4;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px $color3;
-        padding: 20px;
+        text-shadow: 2px 2px 5px $color6;
+        padding-top: 100px;
         text-align: center;
 
         .contactanos {
-            color: $color1;
             font-size: 35px;
             font-family: $font1;
-            padding: 10px;
+            padding: 20px;
         }
 
         strong {
             font-size: 20px;
             font-family: $font2;
-
+            color: $color1;
         }
     }
 
@@ -203,17 +213,17 @@ body {
     width: 100%;
 
     h2 {
-        color: $color6;
+        color: $color4;
         text-align: center;
         font-size: 40px;
         font-family: $font1;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px $color3;
+        text-shadow: 2px 2px 5px $color6;
         padding-top: 45px;
     }
 
     p {
-        color: $color7;
+        color: $color6;
         text-align: justify;
         font-size: 20px;
         font-family: $font2;
@@ -222,19 +232,21 @@ body {
     }
 
     .productos2 {
-        height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         display: grid;
         grid-template-areas:"item1 item2 item3"
                             "item4 item5 item6";
+        grid-template-rows: 700px 700px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .item {
-        height: 200px;
-        border: 2px solid $color6;
-        margin: 20px;
+        height: auto;
+        border: 1px solid $colorborder;
+        border-radius: 10px;
         box-shadow: 3px 3px 5px $color6;
+        margin: 5px;
     }
 
     .item:hover {
@@ -247,6 +259,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0395.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item1;
     }
 
 
@@ -254,6 +267,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0402.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item2;
     }
 
 
@@ -261,6 +275,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0439.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item3;
     }
 
 
@@ -268,6 +283,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0430.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item4;
     }
 
 
@@ -275,6 +291,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0431.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item5;
     }
 
 
@@ -282,6 +299,7 @@ body {
         background-image: url(img/../../imagenes/IMG_0437.jpg);
         background-position: center;
         background-size: cover;
+        grid-area: item6;
     }
 }
 
@@ -291,26 +309,23 @@ body {
     width: 100%;
 
     h2 {
-        color: $color6;
+        color: $color4;
         text-align: center;
         font-size: 40px;
         font-family: $font1;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px $color3;
+        text-shadow: 2px 2px 5px $color6;
         padding-top: 40px;
     }
 
     iframe {
-        width: 90%;
-        height: 500px;
-        padding: 20px;
-        margin: 50px;
+        padding: 15px;
     }
 
     p {
         color: $color6;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         font-family: $font2;
         padding: 20px;
         text-transform: capitalize;
