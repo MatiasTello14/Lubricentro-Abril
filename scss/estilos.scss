@@ -34,12 +34,16 @@ body {
     @include valores (100%, 100vh, url(img/../../imagenes/IMG_0385.jpg));
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 40px;
 
     .subtitulo {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        flex-direction: column;
         color: $color4;
         min-width: 50%;
         height: 200px;
@@ -79,7 +83,17 @@ body {
             padding-left: 120px;
         }
     }
+
+    .videos{
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        .video{
+            border-radius: 10px;
+        }
+    }
 }
+
 
 .presentacion {
     width: 100%;

@@ -16,6 +16,14 @@
                 text-align: center;
             }
         }
+        .videos{
+            padding: 0%;
+            margin: 0%;
+            .video{
+                height: 500px;
+                width: 100%;
+            }
+        }
     }
 
     .presentacion {
@@ -139,6 +147,14 @@
                 font-size: 20px;
                 padding: 10px;
                 text-align: center;
+            }
+        }
+        .videos{
+            padding: 0%;
+            margin: 0%;
+            .video{
+                height: 500px;
+                width: 100%;
             }
         }
     }
